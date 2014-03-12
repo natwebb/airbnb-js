@@ -1,0 +1,12 @@
+extends ../shared/template
+
+block content
+  h1= title
+  form(action='/login', method='POST')
+    fieldset
+      legend Register
+      label(for='email') Email Address
+        input(type='email', name='email', placeholder='john.doe@example.com', autofocus)
+      label(for='password') Password
+        input(type='password', name='password')
+      button Log Me In!
