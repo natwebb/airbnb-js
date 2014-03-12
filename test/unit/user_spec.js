@@ -6,8 +6,6 @@ process.env.DBNAME = 'airbnb-test';
 var expect = require('chai').expect;
 var Mongo = require('mongodb');
 var User;
-//var fs = require('fs');
-//var exec = require('child_process').exec;
 
 describe('User', function(){
 
