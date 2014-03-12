@@ -1,0 +1,16 @@
+extends ../shared/template
+
+block content
+  h1= title
+  form(action='/register', method='POST')
+    fieldset
+      legend Register
+      label(for='email') Email Address
+        input(type='email', name='email', placeholder='john.doe@example.com', autofocus)
+      label(for='password') Password
+        input(type='password', name='password')
+      label(for='role') Are you looking for somewhere to stay (Guest) or offering a place (Host)?
+        select(name='role')
+          option Guest
+          option Host
+      button Register Me!
