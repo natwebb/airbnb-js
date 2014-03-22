@@ -19,6 +19,9 @@ html(class='no-js', lang='en')
 
       section.top-bar-section
         ul.left
+          li: a(href="/listings") Listings
+          li.divider
+          li: a(href="/listings/new") New Listing
         ul.right
           li: a(href="/") Home
           li.divider
@@ -33,5 +36,7 @@ html(class='no-js', lang='en')
     script(src='/js/vendor/foundation.min.js')
     script(src='/js/vendor/lodash.js')
     script(src='/js/vendor/moment.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDjbrlUyDklvWXz_UFr0zWs4kxfOUQLxKQ&sensor=true')
     script(src='/js/source/main.js')
+    block scripts
 

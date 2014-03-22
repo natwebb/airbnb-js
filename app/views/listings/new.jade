@@ -1,0 +1,19 @@
+extends ../shared/template
+
+block content
+  h1= title
+  form(method='POST', action='/listings')
+    fieldset
+      legend Create a New Listing
+      label(for='name') Name
+        input(type='text', name='name', autofocus, placeholder='Beautiful brick house in East Nashville')
+      label(for='amount') Rate per Night
+        input(type='text', name='amount', placeholder='50')
+      label(for='address') Address
+        input(type='text', name='address', placeholder='123 Main St., Anytown, TN')
+      input(type='hidden', name='lat')
+      input(type='hidden', name='lng')
+      button#create Create Listing!
+
+block scripts
+  script(src='/js/source/newlisting.js')
